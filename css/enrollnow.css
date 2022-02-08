@@ -1,0 +1,342 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --first-color: #156181; /*Dark blue*/
+    --second-color: #c0bd0e; /*yellow green*/
+    --third-color: #a6d0e8;  /*light blue*/
+    --fourth-color: #3e8dae; /*blue*/
+    --fifth-color: #fff; /*white*/
+}
+
+body{
+    font-family: sans-serif;
+}
+
+/*Start of Content 1*/
+
+.content1{
+    width: 100%;
+    min-height: 80vh;
+    background-image: url(../img/uni.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.content1 .enrollform{
+    width: 30%;
+    height: 200px;
+    background: rgba(255, 255, 255, 0.65);
+    border-radius: 20px;
+    border: 2px double var(--first-color);
+    margin: 0 10%;
+    position: absolute;
+    margin-top: 10%;
+}
+
+.enrollform h2{
+    text-align: center;
+    padding-top: 10px;
+    color: var(--first-color);
+    text-shadow: 2px 2px var(--third-color);
+}
+
+.enrollform button{
+    width: 250px;
+    height: 50px;
+    background-color: var(--first-color);
+    border: 1px solid var(--fifth-color);
+    box-shadow: 3px 3px var(--first-color);
+    border-radius: 10px;
+    cursor: pointer;
+    position: relative;
+    margin: 0 20%;
+    margin-top: 20px;
+}
+
+.enrollform button a{
+    text-decoration: none;
+    font-size: 140%;
+    color: var(--fifth-color);
+}
+
+.enrollform button:hover{
+    background-color: var(--second-color);
+}
+
+/*End of Content 1*/
+
+/*Start of Content 2*/
+
+.content2{
+    width: 100%;
+    min-height: 150vh;
+}
+
+.content2 .features-container{
+    width: 100%;
+    min-height: 150vh;
+    padding: 5% 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.features{
+    height: 220px;
+    width: 25%;
+    border-radius: 10px;
+    margin: 15px 15px;
+}
+
+.feature-img{
+    width: 100%;
+    height: 100%;
+    margin-bottom: 50px;
+}
+
+.feature-img img{
+    display: inline-block;
+    width: 100%;
+    min-height: 200px;
+}
+
+.feature-img img:hover{
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+.feature-txt{
+    width: 100%;
+    height: 200px;
+}
+
+.feature-txt h3{
+    text-align: center;
+    padding-bottom: 8px;
+    color: var(--first-color);
+}
+
+.feature-txt p{
+    text-align: center;
+    line-height: 1.6;
+    /*color: var(--first-color);*/
+}
+
+/*End of Content 2*/
+
+/*Start of Content 3*/
+
+.content3{
+    width: 100%;
+    height: 40vh;
+}
+
+.fee-details{
+    width: 90%;
+    height: 90%;
+    margin: auto;
+    background: var(--first-color);
+    display:flex;
+}
+
+.fee-details div{
+    width: 25%;
+    height: 50%;
+    margin: auto 0;
+    text-align: center;
+}
+
+.fee-details div .fal{
+    font-size: 250%;
+    /*font-weight: bold;*/
+    color: var(--fifth-color);
+    text-align: center;
+    padding-bottom: 5%;
+}
+
+.fee-details div p{
+    font-size: 100%;
+    color: var(--fifth-color);
+}
+
+.fee-details div p span{
+    display: block;
+    font-size: 150%;
+    padding-bottom: 5%;
+}
+
+/*End of Content 3*/
+
+/*Start of Content 4*/
+
+.content4{
+    width: 100%;
+    height: 100vh;
+}
+
+.content4 h1{
+    text-align: center;
+    padding: 4% 20%;
+    font-size: 250%;
+    font-weight: bolder;
+    color: var(--first-color);
+    text-shadow: 1px 1px black;
+}
+
+.content4 p{
+    text-align: center;
+    padding: 2% 10%;
+    font-weight: bold;
+    color: var(--first-color);
+}
+
+.content4 ul{
+    text-align: center;
+    line-height: 1.6;
+    font-weight: bold;
+    color: var(--first-color);
+}
+
+/*End of Content 4*/
+
+/*Start of Content 5*/
+
+.content5{
+    width: 100%;
+    height: 100vh;
+}
+
+/*End of Content 5*/
+
+.content5{
+    width: 100%;
+    height: 90vh;
+    background: var(--third-color);
+}
+
+.content5 h1{
+    font-size: 200%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    text-align: center;
+    color: var(--first-color);
+}
+
+.programs-container{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    margin-left: 20px;
+}
+
+.program{
+    width: 23%;
+    height: 350px;
+    margin-right: 15px;
+    
+    position: relative;
+}
+
+.program img{
+    position: absolute;
+    width: 100%;
+    border-radius: 15px;
+    transition: transform 1s;
+}
+
+.program img:hover{
+    opacity: 0.7;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.content5 button{
+    width: 250px;
+    height: 50px;
+    background-color: var(--first-color);
+    border: 1px solid var(--fifth-color);
+    box-shadow: 3px 3px var(--first-color);
+    border-radius: 10px;
+    cursor: pointer;
+    position: relative;
+    margin: 0 40%;
+}
+
+.content5 button a{
+    text-decoration: none;
+    font-size: 140%;
+    color: var(--fifth-color);
+}
+
+.content5 button:hover{
+    background-color: var(--second-color);
+}
+
+/*Start of Content 6*/
+
+.content6{
+    width: 100%;
+    height: 70vh;
+    display: flex;
+}
+
+.content6 .imgcontainer{
+    width: 50%;
+    height: 70%;
+}
+
+.imgcontainer img{
+    width: 75%;
+    height: 100%;
+    margin: 10% 10%;
+    margin-left: 20%;
+}
+
+.txtcontainer{
+    width: 50%;
+    height: 80vh;
+    text-align: center;
+    padding: 10% 10%;
+}
+
+.txtcontainer h4{
+    font-size: 150%;
+    padding-bottom: 20px;
+}
+
+.txtcontainer p{
+    line-height: 1.6;
+}
+
+.txtcontainer button{
+    width: 250px;
+    height: 50px;
+    background-color: var(--first-color);
+    border: 1px solid var(--fifth-color);
+    box-shadow: 3px 3px var(--first-color);
+    border-radius: 10px;
+    cursor: pointer;
+    position: relative;
+    margin: 0 20%;
+    margin-top: 20px;
+}
+
+.txtcontainer button a{
+    text-decoration: none;
+    font-size: 140%;
+    color: var(--fifth-color);
+}
+
+.txtcontainer button:hover{
+    background-color: var(--second-color);
+}
+
+
+
+
+

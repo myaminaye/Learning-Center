@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Payment form for Bright Future</title>
+	<link rel="stylesheet" type="text/css" href="css/payment.css">
+	<link href="libs/fontawesomepro/css/all.min.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+	<div class="content">
+        <h1>Thank you for your enrollment!!!</h1>
+		<div class="payment-form">
+			<form action="" method="" enctype="multipart/formdata">
+
+				<div class="order-summary">
+                    <h2>Order Summary</h2>
+                    <p>Order Details <span><a href="#">Show</a></span></p>
+                    <div class="input-group">
+						<div class="input-box">
+                            <input type="text" name="discount" id="discount" class="discount" placeholder="Discount Code"
+                            autocomplete="off">
+                            <button class="apply"><a href="#">Apply</a></button>
+                        </div>
+                    </div>
+                    <p>Original Price<span>**$</span></p>
+                    <p>Price<span>**$</span></p>
+                </div>
+                <!-- end of order summary -->
+
+				<div class="account-information">
+                    <h2>Account Information</h2>
+                    <div class="input-group">
+						<div class="input-box">
+                            <i class="fa fa-user icon"></i>
+                            <input type="text" name="name" id="name" class="name" placeholder="Full Name"
+                                    autocomplete="off" required>
+                        </div>
+                        <div class="input-box">
+                            <i class="fa fa-user icon"></i>
+                            <input type="text" name="nickname" id="nickname" class="name" placeholder="Nick Name" required>   
+						</div>
+                    </div>
+
+                    <div class="input-group">
+                        <div class="input-box">
+                            <i class="fa fa-envelope icon"></i>
+                            <input type="email" name="email" id="email" class="name" placeholder="Email Address" autocomplete="off" required>
+                        </div>
+                    </div>
+
+                    <div class="input-group">
+                        <div class="input-box">
+                            <h4>Date of Birth</h4>
+                            <input type="text" placeholder="DD" class="dob" required>
+                            <input type="text" placeholder="MM" class="dob" required>
+                            <input type="text" placeholder="YYYY" class="dob" required>
+                        </div>
+                        <div class="input-box">
+                            <h4>Gender</h4>
+                            <input type="radio" name="gender" id="male" class="radio" checked>
+                            <label for="male">Male</label>
+
+                            <input type="radio" name="gender" id="female" class="radio">
+                            <label for="female">Female</label>
+                        </div>
+                    </div>
+                    <!-- end of input-group -->
+                </div>
+                <!-- end of account information -->
+
+                <div class="payment-information">
+					<h2>Payment Information</h2>
+					<label for="country">Billing Address</label>
+					<select name="country" id="country" class="country">
+						<option selected disabled>Choose your country</option>
+						<option value="mm">Myanmar</option>
+						<option value="k">Korea</option>
+						<option value="jp">Japan</option>
+						<option value="thi">Thailand</option>
+						<option value="id">India</option>
+						<option value="sg">Singapore</option>
+						<option value="uk">United Kingdom</option>
+						<option value="us">United States</option>
+					</select>	
+                    <div class="input-group">
+                        <div class="input-box">
+                            <input type="radio" name="payment" id="CC" class="radio" checked>
+                            <label for="CC"><span><i class="fab fa-cc-visa"></i> Credit Card</span></label>
+
+                        	<input type="radio" name="payment" id="PP" class="radio">
+                            <label for="PP"><span><i class="fab fa-cc-paypal"></i> Paypal</span></label>
+
+                       	    <input type="radio" name="payment" id="other" class="radio">
+                            <label for="other"><span><i class="fas fa-money-check-alt"></i> Other</span></label>
+                        </div>
+                    </div>
+
+					<div class="input-group">
+                        <div class="input-box">
+                            <i class="fa fa-credit-card icon"></i>
+                            <input type="tel" placeholder="Card Number" class="name" required>
+                        </div>
+                    </div>
+
+                    <div class="input-group">
+                        <div class="input-box">
+                            <i class="fa fa-user icon"></i>
+                            <input type="tel" placeholder="Card CVV" class="name" required>
+                        </div>                         
+                        <div class="input-box">
+                            <select name="date" id="date" class="date">
+                                <option value="0" selected>1</option>
+                                <option value="1">2</option>
+                                <option value="2">3</option>
+                                <option value="3">4</option>
+                                <option value="4">5</option>
+                            </select>
+                            <select name="month" id="month" class="month">
+                                <option value="0" selected>Jan</option>
+                                <option value="2">Feb</option>
+                                <option value="3">Mar</option>
+                                <option value="4">Apr</option>
+                                <option value="5">May</option>
+                            </select>
+                            <select name="year" id="year" class="year">
+                                <option value="0" selected>2022</option>
+                                <option value="1">2021</option>
+                                <option value="2">2020</option>
+                                <option value="3">2019</option>
+                                <option value="4">2018</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <input type="checkbox" name="remember" id="remember" class="" value="1" /><label for="remember">Remember this card </label>
+                    
+                    <span class="secure"><small><i class="fas fa-lock"></i>Secure Connection</small></span>
+                </div>
+                <!-- end of payment information -->
+                <button class="complete"><a href="#">Complete Payment</a></button>
+			</form>
+		</div>
+	</div>
+</body>
+</html>

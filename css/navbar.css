@@ -1,0 +1,365 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: inherit;
+}
+
+:root {
+  --nav-btn-color: #c0bd0e;
+  --nav-bg: #3e8dae;
+  --hovered-bg: #156181;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  z-index: 100;
+  background-color: var(--nav-bg);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.navbar {
+  height: 100%;
+  max-width: 1400px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 50px;
+}
+
+.navbar .logo-container {
+  display: flex;
+}
+
+.logo-container .logo {
+  width: 50px;
+  animation: rotation 8s infinite linear;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+.logo-container .logo-text {
+  font-size: 30px;
+  font-family: cursive;
+  cursor: pointer;
+  position: relative;
+}
+
+.logo-container .logo-text span {
+  font-size: 15px;
+  color: var(--nav-btn-color);
+  display: inline-block;
+  margin-left: -10px;
+}
+
+.logo-container .logo-text::before {
+  content: '';
+  width: 0%;
+  height: 3px;
+  background-color: var(--nav-btn-color);
+  position: absolute;
+  bottom: 0;
+  left: 15%;
+  transition: all 0.2s;
+}
+
+.logo-container .logo-text:hover::before {
+  width: 80%;
+}
+
+.navbar .nav-links {
+  height: 100%;
+  line-height: 70px;
+}
+
+nav .navbar .nav-links .links {
+  display: flex;
+}
+
+.navbar .nav-links .links li {
+  list-style: none;
+  padding: 0 14px;
+  position: relative;
+}
+
+.navbar .nav-links .links li a {
+  color: #fff;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.navbar .nav-links .links li .courses {
+  text-decoration: none;
+  color: black;
+  padding: 8px 8px;
+  background-color: var(--nav-btn-color);
+  border-radius: 4px;
+}
+
+.navbar .nav-links .links li .arrow {
+  transition: all 0.3s ease;
+}
+
+.navbar .nav-links .links li .courses:hover .arrow {
+  transform: rotate(180deg);
+}
+
+.navbar .nav-links .links li .link::before {
+  content: '';
+  width: 0%;
+  height: 3px;
+  margin-bottom: 20px;
+  background-color: var(--nav-btn-color);
+  position: absolute;
+  bottom: 0;
+  left: 20%;
+  transition: all 0.2s;
+}
+
+.navbar .nav-links .links li .link:hover::before {
+  width: 60%;
+}
+.navbar .nav-links .links .sub-menu {
+  width: 220px;
+  position: absolute;
+  top: 70px;
+  left: 0;
+  background: var(--nav-bg);
+  line-height: 40px;
+  border-radius: 0 0 4px 4px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  display: none;
+}
+
+.navbar .nav-links .links .sub-menu li {
+  padding: 0 22px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.navbar .nav-links .links .sub-menu li .more-arrow {
+  line-height: 40px;
+}
+
+.navbar .nav-links .links .sub-menu li a {
+  font-size: 15px;
+  font: 500;
+}
+
+.navbar .nav-links .links li:hover .courses-sub-menu {
+  display: block;
+}
+
+.navbar .nav-links .links li:hover .arrow,
+.more:hover .arrow {
+  transform: rotate(180deg);
+}
+
+.course-links i {
+  transition: all 0.3s ease;
+}
+
+.course-links:hover i {
+  transform: translateX(10px);
+}
+
+.course-links:hover {
+  background: var(--hovered-bg);
+}
+
+.more-arrow {
+  color: white;
+}
+
+.more:hover .more-lang,
+.more:hover .more-bussiness,
+.more:hover .more-personal-dev,
+.more:hover .more-marketing,
+.more:hover .more-online,
+.more:hover .more-fit,
+.more:hover .more-free {
+  display: block;
+}
+
+.more-lang,
+.more-bussiness,
+.more-personal-dev,
+.more-marketing,
+.more-online,
+.more-fit,
+.more-free {
+  background: var(--nav-bg);
+  position: absolute;
+  top: 0;
+  left: 100%;
+  border-radius: 0 4px 4px 4px;
+  border-left: 1px solid rgba(255, 255, 255, 0.1);
+  display: none;
+}
+
+.more-lang li:hover,
+.more-bussiness li:hover,
+.more-personal-dev li:hover,
+.more-marketing li:hover,
+.more-online li:hover,
+.more-fit li:hover,
+.more-free li:hover {
+  background: var(--hovered-bg);
+}
+
+.search-box {
+  position: relative;
+  height: 40px;
+  width: 40px;
+}
+
+.search-box i {
+  color: #fff;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  line-height: 40px;
+  text-align: center;
+  font-size: 22px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.input-box {
+  height: 60px;
+  width: 300px;
+  background: var(--nav-bg);
+  position: absolute;
+  top: 80px;
+  right: calc(100% - 40px);
+  border-radius: 6px;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s ease;
+}
+
+.showInput .search-box .input-box {
+  opacity: 1;
+  pointer-events: auto;
+  top: 65px;
+}
+
+.input-box::before {
+  content: '';
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  background: var(--nav-bg);
+  right: 10px;
+  top: -6px;
+  transform: rotate(45deg);
+}
+
+.input-box input {
+  position: absolute;
+  height: 35px;
+  width: 280px;
+  z-index: 98;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  outline: none;
+  border: none;
+  border-radius: 4px;
+  padding: 0 15px;
+  font-size: 16px;
+}
+
+.right {
+  display: flex;
+  align-items: center;
+}
+
+.profile {
+  position: relative;
+  margin-left: 20px;
+  cursor: pointer;
+  border-left: 1px solid;
+  padding-left: 20px;
+}
+
+.profile .fa-user-circle {
+  color: white;
+  /* color: var(--nav-btn-color); */
+  font-size: 40px;
+  margin-right: 5px;
+}
+
+.profile h1 {
+  display: inline-block;
+  font-size: 16px;
+  color: white;
+}
+
+.profile .fa-angle-down,
+.profile .fa-angle-up {
+  color: white;
+}
+
+.more-profile {
+  list-style: none;
+  width: 150px;
+  position: absolute;
+  background: var(--nav-bg);
+  position: absolute;
+  z-index: 98;
+  top: 100px;
+  right: 0;
+  opacity: 0;
+  /* left: 50%; */
+  border-radius: 4px;
+  /* display: none; */
+  pointer-events: none;
+  transition: all 0.3s ease;
+}
+
+.more-profile::before {
+  content: '';
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  background: var(--nav-bg);
+  right: 10px;
+  top: -10px;
+  z-index: -1;
+  transform: rotate(45deg);
+}
+
+.more-profile li a {
+  text-decoration: none;
+  color: white;
+  line-height: 30px;
+  padding: 8px 10px;
+  display: block;
+}
+
+.more-profile li a:hover {
+  background: var(--hovered-bg);
+}
+
+.showProfileBox .more-profile {
+  opacity: 1;
+  pointer-events: auto;
+  top: 70px;
+}

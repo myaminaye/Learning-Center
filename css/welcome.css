@@ -1,0 +1,208 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*:root{
+    --first-color: #1F2421; 
+    --second-color: #DF9E1C; 
+    --third-color: #FFF9A5;
+}*/
+
+:root{
+    --first-color: #156181; /*Dark blue*/
+    --second-color: #c0bd0e; /*yellow green*/
+    --third-color: #a6d0e8;  /*light blue*/
+    --fourth-color: #3e8dae; /*blue*/
+    --fifth-color: #fff; /*white*/
+}
+
+body{
+    font-family: sans-serif;
+}
+
+.nav{
+	background: var(--first-color);
+	width: 100%;
+	height: 100px;
+}
+
+.welcome{
+	width: 100%;
+	min-height: 100vh;
+	background-image: url(../img/welcomeblog.png);
+	background-repeat: no-repeat;
+	background-position: right;
+	background-size: contain;
+	padding: 20% 5% 0 5%;
+}
+
+.welcome h1{
+	font-size: 250%;
+	font-weight: bold;
+	color: var(--first-color);
+	text-shadow: 3px 3px 2px var(--fifth-color);
+}
+
+.welcome p{
+	font-size: 110%;
+	font-weight: bold;
+	/*color: var(--first-color);*/
+}
+
+.welcome button{
+	width: 150px;
+    height: 50px;
+    background-color: var(--first-color);
+    border: 1px solid var(--fifth-color);
+    box-shadow: 3px 3px var(--first-color);
+    color: var(--fifth-color);
+    border-radius: 10px;
+    cursor: pointer;
+    position: relative;
+	margin-left: 15%;
+	font-size: 100%;
+	font-weight: bold;
+}
+
+.welcome button:hover{
+	background-color: var(--second-color);
+	color: var(--fifth-color);
+	cursor: pointer;
+}
+
+/*Start of Content 1*/
+
+.content1{
+	width: 100%;
+	height: 100vh;
+	display: flex;
+}
+
+.leftapproach{
+	width: 50%;
+	height: 100vh;
+	background-color: var(--third-color);
+	position: relative;
+}
+
+.imgbox{
+	position: absolute;
+	width: 60%;
+	height: 70%;
+	background-image: url(../img/approach.jpg);
+	background-size: cover;
+	margin: 15% 20%;
+	border-radius: 5%;
+	transition: width 1s, height 1s, margin 1s;
+}
+
+.imgbox:hover{
+	width: 70%;
+  	height: 80%;
+  	margin: 10% 15%;
+}
+
+.rightapproach{
+	width: 50%;
+	height: 100vh;
+	background-color: white;
+	padding: 3% 5%;
+}
+
+.rightapproach h1{
+	color: var(--first-color);
+	text-shadow: 2px 2px var(--third-color);
+}
+
+.rightapproach p{
+	line-height: 1.6;
+}
+
+.rightapproach button{
+	width: 80%;
+	height: 10%;
+	background-color: var(--third-color);
+	margin: 3% 15%;
+	border-radius: 5px;
+}
+
+.rightapproach button a{
+	text-decoration: none;
+	color: var(--first-color);
+	font-size: 130%;
+}
+
+.rightapproach button:hover{
+	background-color: var(--second-color);
+	cursor: pointer;
+}
+
+.rightapproach button:hover a{
+	color: var(--fifth-color);
+}
+
+/*End of Content 1*/
+
+/*Start of Content 3*/
+
+.content3{
+	width: 100%;
+	height: 100vh;
+	background: linear-gradient(to bottom right, var(--third-color),var(--first-color));
+}
+
+.content3 p{
+	font-size: 450%;
+	padding: 10% 15%;
+	font-weight: bolder;
+	text-align: center;
+	color: var(--first-color);
+	text-shadow: 2px 2px var(--fifth-color);
+}
+
+.content3 p .bright{
+	color: black;
+	text-shadow: 3px 3px var(--fifth-color);
+}
+
+.content3 p .future{
+	color: var(--second-color);
+	text-shadow: 3px 3px var(--fifth-color);
+}
+
+.content3 .btn{
+	margin: 0 35%;
+	width: 30%;
+	height: 70px;
+	display: flex;
+}
+
+.content3 .btn button{
+	width: 40%;
+	height: 100%;
+	margin: 0 5%;
+	background-color: var(--second-color);
+    border: 1px solid var(--fifth-color);
+    box-shadow: 3px 3px var(--first-color);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.content3 .btn button a{
+	text-decoration: none;
+	color: black;
+	font-size: 150%;
+ 	font-weight: bold;
+}
+
+.content3 .btn button:hover{
+	background-color: var(--first-color);
+	border: 2px solid var(--second-color);
+	cursor: pointer;
+}
+
+.content3 .btn button:hover a{
+	color: var(--second-color);
+}
